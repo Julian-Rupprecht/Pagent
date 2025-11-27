@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@source not "./tailwindcss.exe";
+@source not "./daisyui{,*}.mjs";
+
+@plugin "./daisyui.mjs";
+
+@plugin "./daisyui-theme.mjs" {
+  name: "forest";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  /* Forest base colors */
+  --color-base-100: #171212;
+  --color-base-200: #1f1614;
+  --color-base-300: #2a1e19;
+  --color-base-content: #e9e7e3;
+
+  /* Forest brand colors */
+  --color-primary: #5c7f67;
+  --color-primary-content: #e9e7e3;
+
+  --color-secondary: #e0d9c5;
+  --color-secondary-content: #2b2321;
+
+  --color-accent: #71b580;
+  --color-accent-content: #132918;
+
+  --color-neutral: #3b322f;
+  --color-neutral-content: #e7e3df;
+
+  /* Semantic colors */
+  --color-info: #66c6ff;
+  --color-info-content: #0f2d40;
+
+  --color-success: #5bd97b;
+  --color-success-content: #0e2615;
+
+  --color-warning: #f7d460;
+  --color-warning-content: #4e3b05;
+
+  --color-error: #ff6f6f;
+  --color-error-content: #330f0f;
+
+  /* Border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* Base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* Border */
+  --border: 1px;
+
+  /* Effects */
+  --depth: 1;
+  --noise: 0;
+}
