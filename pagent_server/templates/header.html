@@ -2,9 +2,9 @@
     <div>
         <h1 class="text-3xl font-bold">Pagent</h1>
     </div>
-    <div class="dropdown dropdown-start">
-        <div tabindex="0" role="button" class="btn btn-primary m-1">
-            Model
+    <div class="dropdown dropdown-start" x-data="{ model: 'Select Model' }">
+        <div tabindex="0" role="button" class="btn btn-primary w-40">
+            <p class="truncate flex-1 text-left" x-text="model"></p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -12,8 +12,8 @@
             </svg>
         </div>
         <ul tabindex="1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm p-3">
-            <li><button class="btn btn-soft btn-primary">LLama Model</button></li>
-            <li><button class="btn btn-soft btn-primary">Self-hosted</button></li>
+            <li><button class="btn btn-soft btn-primary" x-on:click="model = 'Llama Model' ">LLama Model</button></li>
+            <li><button class="btn btn-soft btn-primary" x-on:click="model = 'Self-hosted Modelasdfasdfasdf' ">Self-hosted Model</button></li>
         </ul>
     </div>
 </div>
