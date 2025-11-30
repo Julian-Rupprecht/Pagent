@@ -3,6 +3,16 @@
 
 ## Developement 
 
++ Activate environment 
+
+    Linux
+    source .venv/bin/activate
+
+    Windows
+    .venv/Scripts/activate
+
+## Installation
+
 ### UV
 + Install UV package manager for **blazingly fast** installation
 
